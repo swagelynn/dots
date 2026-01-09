@@ -2,7 +2,6 @@
   description = "meow... meowwwwwwwwww.... :3";
 
   inputs = {
-<<<<<<< HEAD
     nixpkgs.url = "github:nixos/nixpkgs/25.11";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -323,10 +322,6 @@
                                   "easylist"
                                 ];
                               };
-                            };
-                            bookmarks = {
-                              force = true;
-                              settings = [];
                             };
                           };
                         };
@@ -671,18 +666,5 @@
         ];
       };
     };
-=======
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
-
-  outputs = {
-    self,
-    nixpkgs,
-    ...
-  }: {
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
->>>>>>> 62ccf573c97c5bce1b1bb5e2f386b60dc35feb40
   };
 }
